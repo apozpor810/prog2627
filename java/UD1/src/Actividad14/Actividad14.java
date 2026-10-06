@@ -7,5 +7,6 @@ public class Actividad14 {
    int edadPerruna = edadHumana *  factorPerruno;
    
    System.out.println("Edad de la mascota en años perrunos:" + edadPerruna);
+   
   } 
 }
