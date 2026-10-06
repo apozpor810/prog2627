@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.web.jspparser/4">
+    <module_version install_time="1785934859168" last="true" origin="installer" specification_version="4.2">
+        <file crc="3223639289" name="config/Modules/org-netbeans-modules-web-jspparser.xml"/>
+        <file crc="2566599759" name="modules/ext/glassfish-jspparser-5.1.0.jar"/>
+        <file crc="2329562184" name="modules/ext/glassfish-jspparser-7.0.25.jar"/>
+        <file crc="2643392651" name="modules/ext/jsp-parser-ext-jakarta.jar"/>
+        <file crc="3351528204" name="modules/ext/jsp-parser-ext.jar"/>
+        <file crc="486522138" name="modules/org-netbeans-modules-web-jspparser.jar"/>
+    </module_version>
+</module>
