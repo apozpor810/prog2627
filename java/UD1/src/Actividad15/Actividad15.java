@@ -5,7 +5,8 @@ public class Actividad15 {
     int pocion =  0;
     double cuesta = 1.50;
     int mochila = 5;
-    double oro = 20.5; 
+    double oro = 20.5;
+    //Total de pociones compradas
     int totalp = mochila - pocion;
     boolean mochilaLlena = false;
        

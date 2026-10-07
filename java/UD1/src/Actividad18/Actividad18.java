@@ -8,11 +8,16 @@ public class Actividad18 {
 
     Scanner sc = new Scanner(System.in);
     
+    //Preguntamos que año es
     System.out.println("¿Que año es?");
     int añoActual = sc.nextInt();
     
+    
+    //Preguntamos en que año nació
     System.out.println("¿En que año naciste?");
     int añoNacido = sc.nextInt();
+    
+    //El calculo de años que tiene
     int años = añoActual - añoNacido;
         
      System.out.println("Tienes " + años + " años");
