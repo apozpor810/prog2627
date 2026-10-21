@@ -10,7 +10,7 @@ public class Actividad19 {
         int pin = 0;
         int intentos = 1;
 
-        while (intentos < 3 && pin != 1717) {
+        while (intentos <= 3 && pin != 1717) {
             pin = sc.nextInt();
             if (pin == 1717) {
                 System.out.println("Bienvenido, se ha intentado entrar " + intentos + " veces");
