@@ -23,7 +23,7 @@ public class Actividad5 {
         System.out.println("Opcion 2 resta");
         System.out.println("Opcion 3 multiplicacion");
         System.out.println("Opcion 4 division");
-        
+
         seleccionarMenu = sc.nextInt();
 
         if (num2 == 0 && seleccionarMenu == 4) {
@@ -110,49 +110,34 @@ public class Actividad5 {
 
     public static double sumarNumeros(double num1, double num2) {
 
-        double suma = num1 + num2;
-
-        return suma;
+        return num1 + num2;
 
     }
 
     public static double restarNumeros(double num1, double num2) {
 
-        double resta = num1 - num2;
-
-        return resta;
+        return num1 - num2;
 
     }
 
     public static double multiplicarNumeros(int num1, int num2) {
 
-        double multiplicacion = num1 * num2;
-
-        return multiplicacion;
-
+        return num1 * num2;
     }
 
     public static double multiplicarNumeros(double num1, double num2, double num3) {
 
-        double multiplicacion2 = num1 * num2 * num3;
-
-        return multiplicacion2;
-
+        return num1 * num2 * num3;
     }
 
     public static double multiplicarNumeros(double num1, double num2) {
 
-        double multiplicacion3 = (int) (num1 * num2);
-
-        return multiplicacion3;
-
+        return (num1 * num2);
     }
 
     public static double dividirNumeros(double num1, double num2) {
 
-        double division = num1 / num2;
-
-        return division;
+        return num1 / num2;
 
     }
 
