@@ -1,0 +1,120 @@
+package Actividad4;
+
+import java.util.Scanner;
+
+public class Actividad4 {
+
+    public static void main(String[] args) {
+
+        int seleccionarMenu = 0;
+
+        // Pedir los datos al usuario
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Introduce el primer numero:");
+
+        double num1 = sc.nextDouble();
+
+        System.out.println("Introduce el segundo numero:");
+
+        double num2 = sc.nextDouble();
+
+        System.out.println("Opcion 1 suma");
+        System.out.println("Opcion 2 resta");
+        System.out.println("Opcion 3 multiplicacion");
+        System.out.println("Opcion 4 division");
+
+        seleccionarMenu = sc.nextInt();
+
+        if (num2 == 0 && seleccionarMenu == 4) {
+
+            System.out.println("No se puede dividir entre 0");
+
+        }
+
+        // Menu calculadora
+        switch (seleccionarMenu) {
+
+            case 1:
+
+                System.out.println("Has seleccionado la suma");
+
+                double suma = sumarNumeros(num1, num2);
+
+                System.out.println(num1 + " + " + num2 + " : " + suma);
+
+                break;
+
+            case 2:
+
+                System.out.println("Has seleccionado la resta");
+
+                double resta = restarNumeros(num1, num2);
+
+                System.out.println(num1 + " - " + num2 + " : " + resta);
+
+                break;
+
+            case 3:
+
+                System.out.println("Has seleccionado la resta");
+
+                double multiplicacion = multiplicarNumeros(num1, num2);
+
+                System.out.println(num1 + " - " + num2 + " : " + multiplicacion);
+
+                break;
+
+            case 4:
+
+                System.out.println("Has seleccionado la division caso 1");
+
+                double division = dividirNumeros(num1, num2);
+
+                System.out.println(num1 + " / " + num2 + " : " + division);
+
+                break;
+
+            default:
+
+                System.out.println("No has seleccionado una operacion valida");
+
+                break;
+
+        }
+    }
+
+    public static double sumarNumeros(double num1, double num2) {
+
+        return num1 + num2;
+
+    }
+
+    public static double restarNumeros(double num1, double num2) {
+
+        return num1 - num2;
+
+    }
+
+    public static double multiplicarNumeros(int num1, int num2) {
+
+        return num1 * num2;
+    }
+
+    public static double multiplicarNumeros(double num1, double num2, double num3) {
+
+        return num1 * num2 * num3;
+    }
+
+    public static double multiplicarNumeros(double num1, double num2) {
+
+        return (num1 * num2);
+    }
+
+    public static double dividirNumeros(double num1, double num2) {
+
+        return num1 / num2;
+
+    }
+
+}
