@@ -4,15 +4,12 @@ package Actividad10;
 public class Actividad10 {
       public static void main(String[] args) {
         
-        // Variables
         int[] array = {3, 8, 5, 2, 9};
         
         int[] arrayInvertido;
-        
-        // Crear el array invertido
+
         arrayInvertido = invertirArray(array);
         
-        // Mostar ambos arrays
         mostrarArray(array);
         
         mostrarArray(arrayInvertido);

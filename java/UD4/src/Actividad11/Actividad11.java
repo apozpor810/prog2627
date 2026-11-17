@@ -5,11 +5,9 @@ package Actividad11;
 public class Actividad11 {
     
     public static void main(String[] args) {
-        
-        // Variables
+
         int[] array = {2, 5, 3, 2, 8, 5, 9};
-        
-        // Mostar los valores unicos del array
+
         arrayValoresSinCopia(array);
         
     }

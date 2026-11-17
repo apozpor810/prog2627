@@ -1,20 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Actividad15;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Cristineya
- */
 public class Actividad15 {
     
     public static void main(String[] args) {
         
-        // Variables
+
         int[] notas = {4, 7, 3, 8, 5, 2, 9, 6, 4, 7};
         
         int contadorAprobados = 0;
@@ -25,10 +18,9 @@ public class Actividad15 {
         
         int notaBuscar, contadorNota = 0;
         
-        // Calculos y pedir dato al usuario
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("\nIntroduce la nota a buscar:");
+        System.out.println("Introduce la nota a buscar:");
         
         notaBuscar = sc.nextInt();
         
@@ -43,7 +35,7 @@ public class Actividad15 {
             if (nota == notaBuscar) contadorNota++;
         }
         
-        System.out.println("\nDatos de notas\n===================");
+        System.out.println("Datos de notas");
         
         System.out.println("Numero alumnos aprobados: " + contadorAprobados);
         

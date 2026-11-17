@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Actividad4;
 
-/**
- *
- * @author Cristineya
- */
 public class Actividad4 {
     public static void main(String[] args) {
         
-        // Variables
         int[] numeros = {10, 8, 6, 4, 2, 0};
         
         int temporal;
@@ -21,7 +13,6 @@ public class Actividad4 {
         
         mostrarArray(numeros);
         
-        // Para que solo se modifique la mitad tiene que ser la mitad del rango
         for (int i=0; i<(numeros.length/2); i++) {
             
             temporal = numeros[i];

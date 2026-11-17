@@ -1,26 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Actividad14;
 
-/**
- *
- * @author Cristineya
- */
 public class Actividad14 {
     
     public static void main(String[] args) {
-        
-        // Varible
+
         int[] numeros = {2, 5, 2, 8, 2, 9, 5, 2};
-        
-        //int numeroBuscado;
-        
+
         int contador;
-        
-        // Mostar el array
-        System.out.println("\nEl array es:");
+
+        System.out.println("El array es:");
         
         for (int i=0; i<numeros.length; i++) {
             
@@ -28,7 +17,7 @@ public class Actividad14 {
             
         }
         
-        System.out.println("\n");
+        System.out.println("");
         
         for (int i=0; i<numeros.length; i++) {
             

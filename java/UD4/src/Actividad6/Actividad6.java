@@ -4,12 +4,9 @@ package Actividad6;
 public class Actividad6 {
         public static void main(String[] args) {
         
-        // Variables
-        int[] numeros = {12, 5, 8, 20, 3, 15};
-        
-        // Mostrar resultados
-        
-        System.out.println("Usando un for\n============");
+        int[] numeros = {5, 12, 33, 7, 9, 18};
+              
+        System.out.println("Usando un for");
         
         for(int i=0; i < numeros.length; i++) {
             
@@ -17,15 +14,15 @@ public class Actividad6 {
             
         }
         
-        System.out.println("\nUsando un for-each\n============");
+        System.out.println("Usando un for-each");
         
-        for(int n : numeros){
+        for(int num : numeros){
             
-            System.out.println(n);
+            System.out.println(num);
             
         }
         
-        System.out.println("\nMostrar solo los mayores de 10\n============");
+        System.out.println("Mostrando solo los numeros mayores de 10");
         
         for(int i=0; i<numeros.length; i++) {
             
