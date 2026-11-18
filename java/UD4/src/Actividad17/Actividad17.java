@@ -56,24 +56,25 @@ public class Actividad17 {
 
     public static void contarPares(int[] numeros) {
         System.out.println("Empezando a mostrar los pares");
+        int contador = 0;
         for (int numero : numeros) {
             if (numero % 2 == 0) {
 
                 System.out.println(numero + " es par");
-
+                ++contador;
             }
 
         }
+        System.out.println("Hay " + contador + " pares");
         System.out.println("Fin de mostrar los pares");
     }
 
     public static void buscarPrimero(int[] numeros) {
          Scanner sc = new Scanner(System.in);
-        int posicion = -1;
         System.out.println("Que numero deseas buscar?");
         int numElegido = sc.nextInt();
         boolean encontrado = false;
-
+        int posicion = 0;
         while (posicion < numeros.length && encontrado == false) {
             if (numeros[posicion] == numElegido) {
                 System.out.println("El numero elegido esta en la posicion " + posicion);
@@ -82,7 +83,8 @@ public class Actividad17 {
             ++posicion;
         }
         if (encontrado == false) {
-            System.out.println("El numero elegido esta en la posicion -1");
+            int noEncontrado = -1;
+            System.out.println("El numero elegido esta en la posicion " + noEncontrado);
         }
     }
 }
