@@ -5,53 +5,119 @@ import java.util.Scanner;
 public class Actividad7 {
 
     public static void main(String[] args) {
+
+        double[] temperaturas = new double[7];
+
+        double tempMaxima, tempMinima;
+
         Scanner sc = new Scanner(System.in);
-        double[] temperatura = new double[7];
-        for (int i = 0; i < temperatura.length; i++) {
-            System.out.println("Ingrese la temperatura de hoy");
-            temperatura[i] = sc.nextDouble();
-            System.out.println("Dia: " + (i + 1) + " Temperatura " + temperatura[i]);
+
+        for (int i = 0; i < temperaturas.length; i++) {
+
+            System.out.println("Introduce la temperatura:");
+
+            temperaturas[i] = sc.nextDouble();
+
         }
 
-        double suma = 0;
-        for (double temperaturas : temperatura) {
-            suma += temperaturas;
+        mostrarArray(temperaturas);
+
+        double media = mediaArray(temperaturas);
+
+        System.out.println("La temperatura media es: " + media);
+
+        tempMaxima = maxArray(temperaturas);
+
+        tempMinima = minArray(temperaturas);
+
+        System.out.println("La temperatura maxima es: " + tempMaxima);
+
+        System.out.println("La temperatura minima es: " + tempMinima);
+
+        double tempSuperar = 25;
+
+        int contador = arraySuperaValor(temperaturas, tempSuperar);
+
+        System.out.println("Hay " + contador + " dias que superan la temperatura de " + tempSuperar + " grados");
+
+    }
+
+    public static void mostrarArray(double[] numerosArray) {
+
+        System.out.println("El array es:");
+
+        for (int i = 0; i < numerosArray.length; i++) {
+
+            System.out.println(numerosArray[i]);
+
         }
-        double media = suma / temperatura.length;
 
-        System.out.println("La media de la temperatura es " + media);
+    }
 
-        double maxima = temperatura[0];
+    public static double mediaArray(double[] numerosArray) {
 
-        for (double tempMax : temperatura) {
-            if (maxima < tempMax) {
-                maxima = tempMax;
+        double suma, media;
+
+        suma = 0;
+
+        for (int i = 0; i < numerosArray.length; i++) {
+
+            suma += numerosArray[i];
+
+        }
+
+        media = suma / numerosArray.length;
+
+        return media;
+
+    }
+
+    public static double maxArray(double[] numerosArray) {
+
+        double temp = numerosArray[0];
+
+        for (int i = 0; i < numerosArray.length; i++) {
+
+            if (temp < numerosArray[i]) {
+                temp = numerosArray[i];
             }
+
         }
 
-        System.out.println("La temperatura mas elevada es " + maxima);
+        return temp;
 
-        double minimo = temperatura[0];
+    }
 
-        for (double tempMin : temperatura) {
-            if (minimo > tempMin) {
-                minimo = tempMin;
+    public static double minArray(double[] numerosArray) {
+
+        double temp = numerosArray[0];
+
+        for (int i = 0; i < numerosArray.length; i++) {
+
+            if (temp > numerosArray[i]) {
+                temp = numerosArray[i];
             }
+
         }
 
-        System.out.println("La temperatura mas elevada es " + minimo);
+        return temp;
 
-        System.out.println("La temperatura mas elevada es " + maxima);
+    }
+
+    public static int arraySuperaValor(double[] numerosArray, double valorSuperar) {
 
         int contador = 0;
 
-        for (double temp : temperatura) {
-            if (temp > 25) {
-               ++contador;
+        for (int i = 0; i < numerosArray.length; i++) {
+
+            if (numerosArray[i] > valorSuperar) {
+                contador++;
             }
+
         }
 
-        System.out.println("Dias que superaron los 25 grados " + contador);
+        return contador;
 
     }
+
 }
